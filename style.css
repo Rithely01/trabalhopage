@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* navbar */
+.header {
+    background: #ffffff;
+    padding: 5px 30px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff4800;
+    height: 55px;
+   letter-spacing: 1px;
+}
+
+.logo-img {
+    margin-top: -10px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 30px 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #ff4800;
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+}
+.quote-btn {
+    padding: 8px 11px;
+    background-color: #ff4800;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3 ease;
+    margin-left: px;
+}
+
+.quote-btn:hover {
+    background-color: #e94200;
+}
+
+/* hero section */
+.hero {
+    position: relative;
+    height: 60vh;
+    background: url(imagens/cargueiro.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+}
+
+.hero-content {
+    margin-top: -35px;
+    position: relative;
+    text-align: center;
+    gap: 20px;  
+    font-weight: bold;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: #ff4800;
+
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    font-size: 16px;
+   margin-top: 20px;
+    height: 40px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 1px;
+    border: none;
+}
+
+.search-button {
+    height: 40px;
+    padding: 0 16px;
+    font-size: 16px;
+    background-color: #ff4800;
+    color: white;
+    border: none;
+}
+
+/* Seção de Login */
+.login-section {
+    width: 100%;
+    padding: 36px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box {
+    width: 100%;
+    max-width: 100vw; /* faz caixa ficar nas bordas da tela */
+    background: #f2f2f4;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.info-box {
+    width: 50%;
+    text-align: left;
+    padding: 40px;
+}
+
+.info-box h2 {
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.info-box h4 {
+    color: #ff4800;
+
+}
+
+.info-box pre {
+    color: #555;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.login-box {
+    width: 25%;
+    height: 333px;
+    padding: 50px;
+    background-color: #ff4800;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.barra {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+}
+
+.botao {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: backgroud-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #000000;
+}
+.stats-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.stats-list li {
+    display: flex;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: normal;
+    flex-direction: column;
+    font-weight: bold;
+
+}
+
+.stats-list span {
+    font-size: 1.8rem;
+    color: #ff4800;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+mark {
+    background-color: #ff4800;
+    padding: 0.2rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pricing-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.pricing-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+   
+}
+
+.pricing-header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.pricing-plan {
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    background: #f4f4f4;
+}
+.pricing-plan:hover {
+    transform: scale(1.05);
+}
+
+.pricing-div {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 30px 0;
+}
+
+.pricing-div h3 {
+    font-size: 1.8rem;
+    color: #ff4800;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.pricing-plan ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.btn-signup {
+    padding: 12px 25px;
+    background-color: #ff4800;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-signup:hover {
+    background-color: #ff4800;
+} 
+
+.team-div {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    height: 10px;
+}
+
+.img-func {
+    padding: 1px;
+    max-width: 300px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.img-func img {
+    height: auto;
+    width: 190px; 
+}
+ 
+ .blog-div {
+    text-align: center;
+    width: 100%;
+    display: block; 
+    margin-bottom: 50px;
+}
+
+
